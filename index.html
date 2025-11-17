@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Studio — Tatuagens</title>
+  <meta name="description" content="Tatuagens feitas com alma e precisão. Portfolio, agendamento e contato." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" aria-label="Home"><span class="logo">TATTOO</span></a>
+      </div>
+
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#home">Home</a>
+        <a href="#portfolio">Portfólio</a>
+        <a href="#about">Sobre</a>
+        <a href="#pricing">Preços</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <div class="actions">
+        <button id="bookBtn" class="btn btn-outline">Agendar</button>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Tattoos feitas com <span>soul and precision</span></h1>
+          <p class="lead">Estúdio especializado em realismo e colorido. Ambiente seguro e higienizado.</p>
+
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn btn-primary">Ver portfólio</a>
+            <button id="bookNow" class="btn btn-secondary">Agendar agora</button>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/hero.jpg" alt="Imagem do artista tatuando">
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section-dark">
+      <div class="container">
+        <h2 class="section-title">Nosso portfólio</h2>
+        <p class="section-sub">Explore trabalhos por estilo — clique para ampliar.</p>
+
+        <div class="gallery">
+          <figure class="gallery-item" data-style="color">
+            <img src="assets/tatto.1.jpg" alt="Tatuagem 1">
+          </figure>
+
+          <figure class="gallery-item" data-style="realistic">
+            <img src="assets/tatto.2.jpg" alt="Tatuagem 2">
+          </figure>
+
+          <figure class="gallery-item" data-style="realistic">
+            <img src="assets/tatto3.jpg" alt="Tatuagem 3">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container about-grid">
+      <div class="about-media">
+        <img src="assets/artista.jpg" alt="Artista do estúdio">
+      </div>
+
+      <div class="about-content">
+        <h2>Conheça o artista</h2>
+        <p>Com mais de 1 ano de experiência em tatuagem, o estúdio valoriza linhas limpas, sombreamento preciso e um atendimento humanizado.</p>
+
+        <ul class="about-list">
+          <li>Especialidades: realismo</li>
+          <li>Atendimento por agendamento</li>
+          <li>Certificações e cursos atualizados</li>
+        </ul>
+
+        <div class="socials">
+          <a href="https://www.instagram.com/kauetattoo57" target="_blank">Instagram do artista</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section-dark">
+      <div class="container">
+        <h2 class="section-title">Como funcionam os preços</h2>
+        <p class="section-sub">Os valores variam de acordo com tamanho, detalhamento e local.</p>
+
+        <div class="pricing-grid">
+          <div class="card">
+            <h3>Mini / Minimal</h3>
+            <p>Pequenos, fine line — orçamento personalizado</p>
+          </div>
+
+          <div class="card">
+            <h3>Médio</h3>
+            <p>Detalhado, sombreamento — orçamento personalizado</p>
+          </div>
+
+          <div class="card">
+            <h3>Grande / Realismo</h3>
+            <p>Retratos e trabalhos extensos — orçamento personalizado</p>
+          </div>
+        </div>
+
+        <p class="small-note">*Valores aproximados. Orçamento final após análise.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container contact-grid">
+      <div>
+        <h2>Agende sua sessão</h2>
+        <p>Preencha o formulário com sua ideia ou envie direto no WhatsApp.</p>
+
+        <form id="bookingForm" class="form">
+          <div class="form-row">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="whatsapp">WhatsApp</label>
+            <input id="whatsapp" name="whatsapp" type="tel" placeholder="+55 (xx) xxxxx-xxxx" required />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Descreva sua ideia</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Enviar Orçamento</button>
+            <a class="btn btn-outline" href="https://wa.me/5535998467031" target="_blank">Enviar por WhatsApp</a>
+          </div>
+        </form>
+      </div>
+
+      <aside class="contact-aside">
+        <h3>Contato rápido</h3>
+        <p>WhatsApp: <a href="https://wa.me/5535998467031" target="_blank">+55 35 99846-7031</a></p>
+
+        <h3>Avaliações</h3>
+        <blockquote class="testimonial">"Melhor experiência. Atendimento impecável e tatuagem perfeita." — Cliente</blockquote>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>©️ <span id="year"></span> Studio Tattoo — Todos os direitos reservados</div>
+
+      <div class="footer-links">
+        <a href="#privacy">Política</a>
+        <a href="#terms">Termos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
